@@ -1,0 +1,50 @@
+<!--pages/map/map.wxml-->
+<view class='mappage'>
+  <view class='seacher'>
+    <view>
+      <picker bindchange="changeSex" range="{{sex}}">
+        <view class='picker'>
+          <!-- <text class='iconfont icon-xingbie'></text> -->
+          <text>{{sex[sexindex]}}</text>
+          <text class='iconfont icon-webicon212'></text>
+        </view>
+      </picker>
+    </view>
+    <view>
+      <picker bindchange='changeAge' range="{{age}}">
+        <view class='picker'>
+          <!-- <text class='iconfont icon-nianling-'></text> -->
+          <text>{{age[ageindex]}}</text>
+          <text class='iconfont icon-webicon212'></text>
+        </view>
+      </picker>
+    </view>
+  </view>
+  <view>
+    <map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="16" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}} " show-location='true' clickable='true' bindregionchange="regionchange"
+      show-location bindtap='cliclMap' style='height:{{height-35}}px;width:100%'></map>
+  </view>
+</view>
+
+<cover-view class='userInfo' bindtap='toUserInfo' wx:if='{{showUser==true}}'>
+  <cover-view class='userhead'>
+    <cover-image src='{{user.map}}'></cover-image>
+  </cover-view>
+  <cover-view class='info'>
+    <cover-view class='row'>
+      <cover-view>{{user.name}}</cover-view>
+      <cover-view>{{user.age}}岁</cover-view>
+      <cover-view>{{user.job}}</cover-view>
+    </cover-view>
+    <cover-view class='row samll'>
+      <cover-view>会员{{user.date}}天</cover-view>
+      <cover-view>被邀{{user.invitee}}次</cover-view>
+      <cover-view>相识{{user.acquaintance}}次</cover-view>
+    </cover-view>
+  </cover-view>
+	<cover-view class='line'></cover-view>
+  <cover-view class='particular'>
+    <cover-view class='userImage'><cover-image src='../../images/more.png'></cover-image> </cover-view>
+		<cover-view class='text'>详细</cover-view>
+  </cover-view>
+</cover-view>

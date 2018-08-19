@@ -1,0 +1,70 @@
+<!--pages/dynamic/dynamic.wxml-->
+<view class='information' wx:for='{{info}}' wx:key='id'>
+  <view class='dynamicinfo'>
+    <view class='name' bindtap='toreqInfo' data-n='{{index}}'>{{item.name1}}</view>
+    <view>{{item.date}}</view>
+    <view>邀约</view>
+    <view class='name' bindtap='toresInfo' data-n='{{index}}'>{{item.name2}}</view>
+  </view>
+  <view class='state' wx:if='{{item.panduan=="2"}}'>
+    <view class='error' bindtap='error' data-n='{{index}}'>被婉拒</view>
+    <view class='success' bindtap='chenggong' data-n='{{index}}'>成功啦</view>
+  </view>
+  <view class='state' wx:elif='{{item.panduan=="1"}}'>
+    <view bindtap='toProgress' data-n='{{index}}'>{{item.num}}条记录</view>
+    <view style='width:50%' bindtap='dofollow' data-n='{{index}}'>
+      <text class='iconfont icon-jilu'></text>做跟进
+    </view>
+  </view>
+</view>
+<!-- 模态框 -->
+<view class='dialog' wx:if='{{showDialog}}'>
+  <view class='dialogInfo'>
+    <view class='head'>
+      <text class='iconfont icon-jilu'></text>
+      <text>缘分跟进</text>
+    </view>
+    <form bindsubmit="formSubmit">
+      <view>
+        <textarea name='followUp' placeholder='输入跟进情况，30字以内'></textarea>
+      </view>
+      <view  class='footer'>
+        <view class='img' bindtap='chooseImg' wx:if='{{puanduan==false}}'>
+				 	<image src='../../images/add.png'></image>
+				</view>
+        <view class='img' wx:elif="{{puanduan==true}}">
+          <image src='{{url}}' mode='aspectFill'></image>
+        </view>
+        <view class='choose'>
+          <button class='close' bindtap='abandon'>取消</button>
+          <button formType='submit'>提交跟进</button>
+        </view>
+      </view>
+    </form>
+  </view>
+</view>
+<!-- 专员模态框 -->
+<view class='zyDialog' wx:if='{{showZyDialog==true}}' bindtap='hiddenZy'>
+  <view>
+    <view>
+      <view class='head'>
+        <image src='{{zy.photo}}'></image>
+      </view>
+      <view class='zyInfo'>
+        <view class='zyname'>
+          <view>{{zy.name}}</view>
+          <view>服务专员</view>
+        </view>
+        <view class='phone'>
+          <view><image src='../../images/phone.png' mode='aspectFill'></image></view>
+          <view>{{zy.phone}}</view>
+        </view>
+      </view>
+    </view>
+    <view class='zyfooter'>
+      <view>做真诚优质服务</view>
+      <view>为佳偶良缘牵手</view>
+    </view>
+  </view>
+
+</view>

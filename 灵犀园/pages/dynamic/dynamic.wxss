@@ -1,0 +1,219 @@
+/* pages/dynamic/dynamic.wxss */
+@import '../../utils/wxss/iconfont.wxss';
+
+.information {
+  display: flex;
+  height: 130rpx;
+  justify-content: space-between;
+  background-color: white;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20rpx;
+  font-size: 20rpx;
+}
+
+.dynamicinfo {
+  width: 63%;
+  height: 40rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #9e9e9e;
+}
+
+.name {
+  font-size: 28rpx;
+	width: 25%;
+	text-align: center;
+}
+
+.state {
+  display: flex;
+  width: 37%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.state>view {
+  width: 32%;
+  border-radius: 10rpx;
+  font-size: 20rpx;
+  text-align: center;
+}
+
+.error {
+  color: #9e9e9e;
+	padding:10rpx 20rpx;
+  background-color: #e9e9e9;
+}
+
+.iconfont {
+  color: #f3a088;
+  margin-right: 10rpx;
+}
+
+.success {
+  color: white;
+		padding: 10rpx 20rpx;
+  background-color: #f3a088;
+}
+
+.dialog {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.dialogInfo {
+  width: 500rpx;
+  margin: 300rpx auto 0;
+  background-color: white;
+  padding: 15rpx;
+	border-radius: 7rpx;
+}
+
+.dialogInfo .head {
+  font-size: 28rpx;
+}
+
+textarea {
+  border: 1rpx solid #9e9e9e;
+  width: 450rpx;
+  height: 200rpx;
+  padding: 10rpx;
+  margin: 10rpx auto;
+  font-size: 28rpx;
+}
+
+.footer {
+  display: flex;
+  width: 480rpx;
+  padding: 7rpx;
+	height: 140rpx;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+
+
+.footer .iconfont {
+  font-size: 140rpx;
+  color: #e9e9e9;
+	margin-bottom: -13rpx;
+}
+
+.footer .img{
+	width: 140rpx;
+	padding-left:10rpx; 
+	height: 140rpx;
+}
+
+.footer image{
+	width: 140rpx;
+	height: 140rpx;
+}
+
+.choose{
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.footer button {
+  width: 160rpx;
+  font-size: 24rpx;
+  background-color:  #f3a088;
+  color: white;
+	margin: 0;
+}
+
+.footer .close{
+	width: 100rpx;
+	background-color: #e9e9e9;
+	margin-left: 30rpx;
+	padding: 3rpx;
+	color: #a2a1a0
+}
+
+
+.zyDialog{
+	width: 100%;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.zyDialog>view{
+	width: 500rpx;
+  margin: 300rpx auto 0;
+  background-color: white;
+  padding: 50rpx 50rpx 30rpx;
+	display: flex;
+	flex-wrap: wrap;
+	border-radius: 7rpx;
+}
+
+.zyDialog>view>view{
+	display: flex;
+	width: 100%;
+}
+
+
+.head image{
+	width: 120rpx;
+	height: 120rpx;
+	border-radius: 50%;
+}
+
+.zyInfo{
+	width: 80%;
+}
+
+.zyInfo>view{
+	display: flex;
+	justify-content: space-around;
+	padding-left:30rpx; 
+}
+
+.zyname>view{
+	width: 40%;
+	height: 50rpx;
+	line-height: 50rpx;
+	font-size: 30rpx;
+	margin-top: 20rpx;
+}
+
+.phone view{
+	height: 60rpx;
+	line-height: 60rpx;
+	margin-top: 25rpx;
+	font-size: 30rpx;
+	align-items: center;
+	color: #787777
+}
+
+.phone image{
+	width: 50rpx;
+	height: 50rpx;
+}
+
+.zyfooter{
+	display: flex;
+	margin-top: 40rpx;
+	justify-content: space-around;
+	border-top: 1rpx dashed #a2a1a0
+}
+
+.zyfooter view{
+	font-size: 32rpx;
+	width: 50%;
+	height: 100rpx;
+	line-height: 100rpx;
+	text-align: center;
+	color: #787777
+}

@@ -1,0 +1,66 @@
+<!--pages/userInfo/userInfo.wxml-->
+
+<view class='infoPage'>
+  <view class='trouser'>
+    <view class='info'>
+      <view class='frist'>
+        <view class='infoname'>{{user.name}}</view>
+        <view>{{user.sex}}</view>
+        <view>{{user.age}}岁</view>
+      </view>
+      <view class='foot'>
+        <view>{{user.num}}</view>
+        <view>{{user.constellation}}</view>
+        <view>{{user.work}}</view>
+        <view>会员{{user.date}}天</view>
+        <view>被邀{{user.invitee}}次</view>
+        <view>相识{{user.acquaintance}}次</view>
+      </view>
+    </view>
+    <view class='imgbox'>
+      <view>
+        <image src='{{user.head1}}' mode='aspectFill' bindtap='cilckImg1' lazy-load='true'></image>
+      </view>
+      <view>
+        <image src='{{user.fp1}}' mode='aspectFill' bindtap='cilckImg2' lazy-load='true'></image>
+      </view>
+      <view>
+        <image src='{{user.sp1}}' mode='aspectFill' bindtap='cilckImg3' lazy-load='true'></image>
+      </view>
+      <view>
+        <image src='{{user.tp1}}' mode='aspectFill' bindtap='cilckImg4' lazy-load='true'></image>
+      </view>
+    </view>
+  </view>
+  <view class='self-intro'>
+    <text>专员认证：</text>
+    <view class='self-area'>
+      {{selfIntro}}
+    </view>
+  </view>
+  <view class='self-intro'>
+    <text>期待缘分：</text>
+    <view class='self-area'>
+      {{expectation}}
+    </view>
+  </view>
+  <view class='zy'>
+    <view class='iconfont icon-fuwuguwen attache'></view>
+    <view>
+      <text class='serve'>服务专员——{{zhuanyuan}}</text>
+    </view>
+  </view>
+  <view class='update'>
+    <button open-type="share">
+      <view class='iconfont icon-fenxiang'>
+        <text>缘份转发</text>
+      </view>
+    </button>
+    <button bindtap='inviteeXS'>
+      <view>
+        <view class='iconfont icon-xinxing xyicon'>
+				<text>相识邀约</text></view>
+      </view>
+    </button>
+  </view>
+</view>

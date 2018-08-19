@@ -1,0 +1,57 @@
+/* pages/performance/performance.wxss */
+@import '../../utils/wxss/iconfont1.wxss';
+
+.headimg {
+  height: 190rpx;
+}
+
+.headimg image {
+  width: 100%;
+  height: 190rpx;
+}
+
+.mode {
+  display: flex;
+  margin-bottom: 50rpx;
+  font-size: 30rpx;
+  color: #9c9b9b;
+  letter-spacing: 2rpx;
+  background-color: white;
+  box-shadow: 0 5rpx 5rpx #e5e4e4;
+  justify-content: space-around;
+}
+
+.myLogin {
+  height: 130rpx;
+  line-height: 130rpx;
+  display: flex;
+}
+
+.myLogin>view {
+  margin: 0 20rpx;
+}
+
+.circle {
+  width: 360rpx;
+  height: 360rpx;
+  border-radius: 50%;
+  margin: 196rpx auto 0;
+  background-color: white;
+  box-shadow: 0 5rpx 5rpx #e5e4e4;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  letter-spacing: 2rpx;
+}
+
+.zhi {
+  font-size: 30rpx;
+  color: #9c9b9b;
+}
+
+.zero {
+  font-size: 150rpx;
+  color: #f4b67b;
+}

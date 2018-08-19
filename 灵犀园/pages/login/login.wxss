@@ -1,0 +1,42 @@
+/* pages/login/login.wxss */
+@import "../../utils/wxss/iconfont.wxss";
+.imgBox image{
+	width: 100%;
+}
+
+.iconfont{
+	font-size: 36rpx;
+}
+
+.login{
+	width: 96%;
+	margin: 0 auto;
+}
+
+.box{
+	height: 100rpx;
+	display: flex;
+	line-height: 100rpx;
+	border-bottom:1px solid lightgrey;  
+}
+
+.box text{
+	margin-left: 30rpx;
+}
+
+
+.box input{
+	height: 100rpx;
+	font-size: 30rpx;
+	line-height: 100rpx;
+	margin-left: 30rpx;
+}
+
+.myLogin{
+	margin: 100rpx 0;
+}
+
+.myLogin button{
+	background-color:#fb6081;
+	color: white; 
+}

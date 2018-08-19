@@ -1,0 +1,50 @@
+{
+  "pages": [
+		"pages/promanage/promanage",
+    "pages/map/map",
+    "pages/dynamic/dynamic",
+    "pages/audit/audit",
+    "pages/userInfo/userInfo",
+    "pages/addInfo/addinfo",
+    "pages/progress/progress",
+    "pages/fate/fate",
+		"pages/addInfo2/addinfo2",
+    "pages/login/login",
+    "pages/performance/performance",
+    "pages/logs/logs",
+    "pages/updata/updata",
+    "pages/edit/edit",
+    "pages/edit2/edit2"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "灵犀园",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#868686",
+    "selectedColor": "#515151",
+    "backgroundColor": "#f7f7f7",
+    "list": [
+      {
+        "pagePath": "pages/map/map",
+        "text": "地图",
+        "iconPath": "images/map1.png",
+        "selectedIconPath": "images/map2.png"
+      },
+      {
+        "pagePath": "pages/fate/fate",
+        "text": "缘分",
+        "iconPath": "images/heart1.png",
+        "selectedIconPath": "images/heart2.png"
+      },
+      {
+        "pagePath": "pages/promanage/promanage",
+        "text": "管理",
+        "iconPath": "images/admin1.png",
+        "selectedIconPath": "images/admin2.png"
+      }
+    ]
+  }
+}

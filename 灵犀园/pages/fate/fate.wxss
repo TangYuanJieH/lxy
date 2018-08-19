@@ -1,0 +1,90 @@
+/* pages/fate/fate.wxss */
+@import '../../utils/wxss/iconfont.wxss';
+@import '../../utils/wxss/iconfont1.wxss';
+
+.fatePage{
+	background-color: #f4f4f8;
+}
+
+.imgBox{
+	width: 100%;
+	height: 360rpx;
+}
+
+.imgBox image{
+	width: 100%;
+	height: 360rpx;
+}
+
+.fateinfo{
+	position: relative;
+	margin: 10rpx auto;
+	display: flex;
+	height: 125rpx;
+	color: #7A7878;
+	width: 98%;
+	justify-content: space-between;
+}
+
+.fateinfo>view{
+	border-radius: 10rpx;
+	background-color: white;
+	box-shadow: 0 5rpx 5rpx #e5e4e4;
+}
+
+.fateZ{
+	width: 58%;
+	display: flex;
+	font-size: 24rpx;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.date{
+	text-align: center;
+	width: 20%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	font-size: 20rpx;
+}
+
+.date .iconfont{
+	font-size:20rpx;
+}
+
+.user{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	text-align: center;
+}
+.user>view{
+	width: 20%;
+}
+
+.user image{
+	width: 60rpx;
+	height: 60rpx;
+	border-radius: 50%;
+}
+
+.user .username{
+	overflow: hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+
+.text{
+	width: 20%
+}
+
+.progress{
+	width: 20%;
+	display: flex;
+	align-items: center;
+	font-size:24rpx;
+	background-color: white;
+	justify-content: space-around;
+}

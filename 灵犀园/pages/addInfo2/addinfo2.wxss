@@ -1,0 +1,55 @@
+/* pages/addInfo2/addinfo2.wxss */
+@import '../../utils/wxss/iconfont.wxss';
+#addPage{
+	background-color: #f4f4f8;
+	overflow: hidden
+}
+
+.imgsize{
+	width: 100rpx;
+	height: 100rpx;
+}
+
+.introduce{
+	font-size: 30rpx;
+	width: 100%;
+	margin: 30rpx auto;
+	background-color:white;
+	overflow: hidden;
+}
+
+.prointroduce{
+	height: 300rpx;
+	margin: 30rpx;
+}
+
+.fateintroduce{
+	height: 200rpx;
+	margin: 30rpx;
+}
+
+.img{
+	display: flex;
+	width: 95%;
+	margin: 0 auto;
+	text-align: center;
+	justify-content: space-around;
+	background: white;
+	font-size: 30rpx;
+	padding: 10rpx 0 30rpx;
+}
+
+.tianjia{
+	font-size:100rpx; 
+	color: #d1d1dfa8;
+}
+
+.next{
+	text-align: center;
+}
+
+.bindNext{
+	background: #fb6081;
+	color: white;
+	margin: 50rpx 0;
+}

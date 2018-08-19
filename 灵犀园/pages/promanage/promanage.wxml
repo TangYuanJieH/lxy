@@ -1,0 +1,46 @@
+<!--pages/promanage/promanage.wxml-->
+<view class='managePage'>
+  <view class='headimg'>
+    <image src='http://pcnuifdw5.bkt.clouddn.com/160950.gif'></image>
+  </view>
+  <view class='manageInfo'>
+    <view class='mode'>
+      <view class='myLogin' bindtap='tologin' wx:if='{{afterLogin==false}}'>
+        <view class='iconfont icon-huiyuan'></view>
+        <view>登录</view>
+      </view>
+      <view class='afterLogin' wx:elif='{{afterLogin==true}}'>
+        <view>
+          <view>欢迎回来</view>
+          <view>{{user}}</view>
+          <view class='quit' bindtap='quit'>退出</view>
+        </view>
+
+      </view>
+    </view>
+    <view class='second'>
+      <view bindtap='toadd'>
+        <view class='iconfont icon-tianjia1'></view>
+        <view>客户添加</view>
+      </view>
+      <view bindtap='topro'>
+        <view class='iconfont icon-shouhouguanli'></view>
+        <view>客户管理</view>
+      </view>
+      <view bindtap='toserve'>
+        <view class='iconfont icon-xingxing'></view>
+        <view>客户服务</view>
+      </view>
+      <view bindtap='toperformance'>
+        <view class='iconfont icon-qitashouru'></view>
+        <view>我的业绩</view>
+      </view>
+    </view>
+    <view class='mode'>
+      <button class="cs_button" open-type="contact" session-from="weapp">
+        <view class='iconfont icon-kefufenxiermaikefu'></view>
+        <view>咨询中心</view>
+      </button>
+    </view>
+  </view>
+</view>

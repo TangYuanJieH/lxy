@@ -1,0 +1,113 @@
+/* pages/map/map.wxss */
+@import "../../utils/wxss/iconfont.wxss";
+@import '../../utils/wxss/iconfont1.wxss';
+
+#map {
+  transition: all 0.2s linear;
+  margin-bottom: 5rpx;
+}
+
+.seacher {
+  display: flex;
+  height: 65rpx;
+  font-size: 28rpx;
+  width: 100%;
+  color: gray;
+  box-shadow: 0 5rpx 5rpx rgb(226, 223, 223);
+  margin-bottom: 6rpx;
+  background-color: white;
+}
+
+.seacher>view {
+  height: 50rpx;
+  line-height: 50rpx;
+  width: 28%;
+  margin-left: 20rpx;
+	border: 1rpx solid #bfbfbf;
+	border-radius: 50rpx;
+}
+
+.picker {
+	text-align: center;
+}
+
+.picker text {
+  margin: 0 10rpx;
+}
+
+.userInfo {
+  height: 160rpx;
+  border-radius: 15rpx;
+  width: 90%;
+  position: absolute;
+  left: 5%;
+  top: 0;
+  margin-top: 100rpx;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  border: 1px solid #e5e4e4;
+}
+
+.userInfo .userhead {
+  width: 25%;
+  display: flex;
+	height: 160rpx;
+  justify-content: space-around;
+	overflow: hidden;
+	border-top:1rpx solid #e5e4e4;
+	border-bottom:1rpx solid #e5e4e4;
+	border-left:1rpx solid #e5e4e4;
+}
+
+.userInfo .info {
+  width: 70%;
+  font-size: 24rpx;
+  align-items: center;
+}
+
+.info .row {
+  width: 100%;
+  font-size: 28rpx;
+  display: flex;
+  height: 55rpx;
+  color: #626262;
+  align-items: center;
+}
+
+.row cover-view {
+  width: 33%;
+  text-align: center;
+}
+
+.info .samll {
+  font-size: 20rpx;
+  color: #818080;
+}
+
+.line{
+	width: 2rpx;
+	height: 65rpx;
+	background-color: #e5e4e4
+}
+
+.particular {
+  width: 15%;
+  text-align: center;
+}
+
+.particular cover-image{
+	width: 35rpx;
+	height: 35rpx;
+}
+
+.userImage{
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 10rpx;
+}
+
+.particular .text {
+  font-size: 24rpx;
+  color: #626262;
+}

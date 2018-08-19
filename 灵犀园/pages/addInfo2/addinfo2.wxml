@@ -1,0 +1,44 @@
+<!--pages/addInfo2/addinfo2.wxml-->
+<view id='addPage' style='height:{{windowHeight}}px'>
+  <form bindsubmit="formSubmit">
+    <view class='introduce'>
+      <textarea name='selfIntro' placeholder='输入客户认证' class='prointroduce' maxlength='300'></textarea>
+    </view>
+    <view class='introduce'>
+      <textarea name='expectation' placeholder='输入客户期望' class='fateintroduce' maxlength='300'></textarea>
+    </view>
+    <view class='img'>
+      <view class='head'>
+        <text>头像</text>
+        <view bindtap='addheadimg'>
+          <image class='imgsize' src='../../images/add.png' wx:if='{{head.panduan ==true}}'></image>
+          <image class='imgsize' mode='aspectFill' src='{{head.img}}' wx:elif='{{head.panduan==false}}'></image>
+        </view>
+      </view>
+      <view>
+        <text>相册</text>
+        <view bindtap='addfristimg' id='2'>
+          <image class='imgsize' src='../../images/add.png' wx:if='{{frist.panduan ==true}}'></image>
+          <image class='imgsize' mode='aspectFill'  src='{{frist.img}}' wx:elif='{{frist.panduan ==false}}'></image>
+        </view>
+      </view>
+      <view>
+        <text>相册</text>
+        <view bindtap='addsecondimg' id='3'>
+          <image class='imgsize' src='../../images/add.png' wx:if='{{second.panduan ==true}}'></image>
+          <image class='imgsize' mode='aspectFill'  src='{{second.img}}' wx:elif='{{second.panduan==false}}'></image>
+        </view>
+      </view>
+      <view>
+        <text>相册</text>
+        <view bindtap='addthirdimg' id='4'>
+          <image class='imgsize' src='../../images/add.png' wx:if='{{third.panduan ==true}}'></image>
+          <image class='imgsize' mode='aspectFill' src='{{third.img}}' wx:elif='{{third.panduan==false}}'></image>
+        </view>
+      </view>
+    </view>
+    <view class='next'>
+      <button size='mini' class='bindNext' formType="submit">提交</button>
+    </view>
+  </form>
+</view>

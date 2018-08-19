@@ -1,0 +1,41 @@
+<!--pages/fate/fate.wxml-->
+<view class='fatePage'>
+  <view class='imgBox'>
+    <image src='http://pcnuifdw5.bkt.clouddn.com/160851.gif'></image>
+  </view>
+  <view class='fateinfo' wx:for='{{fate}}' bindtap='toprogress' data-n='{{index}}'  wx:key='id'>
+    <view class='date'>
+      <view>
+        <view>
+          <text class='iconfont icon-riqi'></text>
+        </view>
+        <view>
+          <text>{{item.date}}</text>
+        </view>
+      </view>
+    </view>
+    <view class='fateZ'>
+      <view class='user'>
+        <view>
+          <image src='{{item.invite.head}}'></image>
+        </view>
+        <view class='username'>
+          <text>{{item.invite.name}}</text>
+        </view>
+				<view class='text'>
+          <text>相邀</text>
+        </view>
+        <view class='username'>
+          <text>{{item.invited.name}}</text>
+        </view>
+        <view>
+          <image src='{{item.invited.head}}'></image>
+        </view>
+      </view>
+    </view>
+    <view class='progress'>
+      <text class='iconfont icon-jilu'></text>
+      <text>{{item.num}}进展</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,17 @@
+<!--pages/performance/performance.wxml-->
+<view>
+  <view class='headimg'>
+    <image src='http://pcnuifdw5.bkt.clouddn.com/160950.gif'></image>
+  </view>
+  <view class='mode'>
+    <view class='myLogin' bindtap='tologin'>
+      <view>我的业绩</view>
+    </view>
+  </view>
+  <view class='circle'>
+    <view>
+      <view class='zhi'>我的本月业绩</view>
+      <view class='zero'>0</view>
+    </view>
+  </view>
+</view>

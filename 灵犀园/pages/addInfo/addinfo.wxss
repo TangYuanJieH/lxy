@@ -1,0 +1,37 @@
+/* pages/addInfo/addinfo.wxss */
+
+.demo{
+	margin: 50rpx 0;
+}
+
+.add{
+	height: 90rpx;
+	width: 100%;
+	display: flex;
+	background-color: white;
+	font-size:30rpx;
+	justify-content: space-between;
+	align-items: center;
+	margin: 1px 0;
+	line-height: 90rpx;
+	padding:0 20rpx; 
+}
+
+.title{
+	width: 30%;
+}
+
+.myinput{
+	width: 50%;
+	text-align: center;
+}
+
+.next{
+	margin-top: 100rpx;
+	text-align: center;
+}
+
+.bindNext{
+	background: #fb6081;
+	color: white
+}
